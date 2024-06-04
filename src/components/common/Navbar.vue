@@ -10,9 +10,13 @@
                 </div>
             </div>
 
-            <ul id="btn" class="flex space-x-4 uppercase font-semibold font-engplot">
-                <li><router-link class="w-auto h-[40px] hover:bg-slate-600 text-[#ffffff] dark:bg-gray-400 p-2 border-2 rounded-md" to="/Login">Sign In</router-link></li>
-                <li><router-link class="w-auto h-[40px] hover:bg-slate-400 text-white p-2 border-2 rounded-md" to="/Register">Sign Up</router-link></li>
+            <ul id="btn" class="flex items-center space-x-4 uppercase font-semibold font-engplot">
+                <li><button class="button p-2 w-auto">
+                    <router-link to="/Login">Sign In</router-link>
+                </button></li>
+                <li><button class="button p-2 w-auto bg-slate-700 text-[#ffffff] hover:transform: translateY(-1.5px); hover:text-[#311e39] hover:bg-gray-300">
+                    <router-link to="/Register">Sign Up</router-link>
+                </button></li>
             </ul>
         </div>
 
@@ -78,6 +82,34 @@ export default {
 </script>
 
 <style>
+.button {
+  background-color: transparent;
+  border: 2px solid #1A1A1A;
+  border-radius: 10px;
+  color: #3B3B3B;
+  display: inline-block;
+  font-size: 16px;
+  line-height: normal;
+  outline: none;
+  transition: all 200ms cubic-bezier(.23, 1, 0.32, 1);
+}
+
+
+.button:disabled {
+  pointer-events: none;
+}
+
+.button:hover {
+  color: #fff;
+  background-color: #1A1A1A;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-1.5px);
+}
+
+.button:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
 
 #dropdownNav li {
     @apply hover:bg-white hover:text-black w-[80%] rounded-lg text-center py-4 uppercase;
