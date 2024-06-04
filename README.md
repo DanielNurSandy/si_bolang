@@ -9,23 +9,29 @@
     ```sh
     git init
     ```
-
-3. **Inisialisasi repository Git:**
+    
+3. **Berpindah antar branch:**
+    ```sh
+    git branch -M master
+    ```
+    nb: ganti master dengan branch yang di inginkan
+    
+4. **Inisialisasi repository Git:**
     ```sh
     git add .
     ```
 
-4. **Tambahkan remote repository:**
+5. **Tambahkan remote repository:**
     ```sh
     git remote add origin https://github.com/DanielNurSandy/si_bolang.git
     ```
 
-5. **Lakukan commit dengan pesan:**
+6. **Lakukan commit dengan pesan:**
     ```sh
     git commit -m "Perubahan ke-1 seterusnya"
     ```
 
-6. **Push ke branch utama (main atau master):**
+7. **Push ke branch utama (main atau master):**
     - Jika menggunakan branch `main`:
         ```sh
         git push -u origin main
@@ -34,7 +40,7 @@
         ```sh
         git push origin -u master
         ```
-7. **Mengambil file dari github**
+8. **Mengambil file dari github**
     ```sh
     git pull
     ```
